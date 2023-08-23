@@ -1,0 +1,13 @@
+{
+	"name": "guf-werribee-metawatch",
+	"version": "0.0.1",
+	"description": "",
+	"repository": "https://github.com/mmckie42/Guf-Werribee-Metawatch",
+	"workspaces": [
+		"frontend",
+		"server"
+	],
+	"scripts": {
+		"lint": "yarn workspaces foreach run lint"
+	}
+}
