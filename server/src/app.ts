@@ -15,7 +15,8 @@ app.get('/faction/:id', async (req, res: express.Response<Faction | { message:st
 	if(req.params.id === '1') {
 		res.status(200).json({
 			name: 'My almighty faction',
-			wins: 4
+			wins: 4,
+			numOfPlayers: 3,
 		});
 	}
 	else {
