@@ -12,11 +12,12 @@ app.get('/hello', async (req, res: express.Response<string>) => {
 });
 
 app.get('/faction/:id', async (req, res: express.Response<Faction | { message:string }>) => {
-	if(req.params.id === '1') {
+	if(req.params.id === 'adMech') {
 		res.status(200).json({
-			name: 'My almighty faction',
+			name: 'Adeptus Mechanicus',
 			wins: 4,
 			numOfPlayers: 3,
+			gamesPlayed: 3
 		});
 	}
 	else {
@@ -33,3 +34,4 @@ app.listen(8080, () => {
 		console.log(chalk.magenta('-----------------------------------------------------------------------'));
 	}
 });
+
