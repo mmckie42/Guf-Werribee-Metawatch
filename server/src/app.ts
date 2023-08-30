@@ -1,11 +1,32 @@
 import express from 'express';
 import chalk from 'chalk';
 import { Faction } from './types';
+import { parse } from 'csv-parse';
+const fs = require("fs")
 const app = express();
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const env = app.get('env').trim();
+
+// Import data from csv section
+// using info from https://sebhastian.com/read-csv-javascript/
+fs.createReadStream('./csv-import/armies.csv')
+	.pipe(parse({ delimiter: ",", from_line: 14 }))
+	.on("data", function (row) {
+		console.log(row)
+	})
+	.on("error", function (error) {
+		console.log(error.message);
+	})
+	.on("end", function () {
+		console.log("finished");
+	});
+
+
+// End import data section
+
 
 app.get('/hello', async (req, res: express.Response<string>) => {
 	res.json('Hello world');
