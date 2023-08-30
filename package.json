@@ -9,5 +9,8 @@
 	],
 	"scripts": {
 		"lint": "yarn workspaces foreach run lint"
+	},
+	"dependencies": {
+		"csv-parse": "^5.5.0"
 	}
 }
