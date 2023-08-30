@@ -1,142 +1,33 @@
-Name,🔒 Row ID,Long Name,Game/ID,Faction/ID,Faction/Detachment,Faction/String,iconCustom,Owner/PersonID,Crusade/ID,Force Image,var/EnteredCrusadeCode,Battles/TotalWins,Battles/TotalLosses,Battles/TotalDraws,Resources/SupplyLimit,Resources/RequisitionPoints,Purchase/TempRequisition,Purchase/PurchaseHistory,Purchase/TRTargetUnit,Purchase/TempBH,Purchase/varKeyword,Fluff,ViewTab,Faction/SubfactionID,Faction/SubFactionString,Crusade/Points,Purchase/TargetUnitNewPoints,Purchase/TempEnhancementTitle,Purchase/TempEnhancementText
-Tempest Legion,Ozl1.EvITYKlZsDbYQ6fdA,Tempest Legion 2nd Company,40K,40KSMA,Gladius Task Force,Space Marines,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/6GbbXWr0FVEgpXYJL4pC.svg,4m.NU7kaSH24KnXTl6Ywsg,lae.P-1OTW-M5JwStHAemQ,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/kmTxnDt6T5OUFYJ1YqRe.JPG,TYRANID,4,7,2,1000,6,r0WD00a8SwiNZMcayxXl-Q,"
-Increase Supply Limit
-Increase Supply Limit, -1RP (6/13/2023, 4:29:04 PM)
-
-Fresh Recruits, -1RP (6/13/2023, 5:10:31 PM)
-Fresh Recruits, -2.5RP (6/13/2023, 5:10:49 PM)
-Repair and Recuperate (Apollo Squad), RP (6/13/2023, 5:34:33 PM)
-Repair and Recuperate (Captain Astralex), -4 RP (6/13/2023, 5:36:52 PM)
-Rearm and Resupply (Captain Astralex), -1RP (6/13/2023, 5:43:11 PM)
-Legendary Veterans (Ares Squad), -3RP (6/13/2023, 5:47:52 PM)
-Increase Supply Limit (Ares Squad), MISSINGRP (6/13/2023, 6:12:03 PM)
-Increase Supply Limit (Ares Squad), MISSINGRP (6/13/2023, 6:13:53 PM)
-Increase Supply Limit (Ares Squad), -1RP (6/13/2023, 6:15:34 PM)
-Increase Supply Limit (Ares Squad), -1RP (6/13/2023, 6:15:48 PM)
-Renowned Heroes (Captain Astralex), BROKENRP (6/13/2023, 10:54:29 PM)
-Tyrannic War Veteran (Brother Doran), -1RP (6/14/2023, 9:13:13 AM)
-Tyrannic War Veteran (Apollo Squad), -1RP (6/27/2023, 10:58:33 PM)
-Tyrannic War Veteran (Apollo Squad), -1RP (6/27/2023, 11:01:40 PM)
-Tyrannic War Veteran (Apollo Squad), -1RP (6/27/2023, 11:04:40 PM)
-Tyrannic War Veteran (Brother Victarion), -1RP (6/27/2023, 11:05:10 PM)
-Tyrannic War Veteran (Knight Valadictus), -1RP (6/28/2023, 9:40:40 AM)",j.keo2IaRZKnCY4t6xgFGA,jF0i8uXgQhOcEkJOPm2S2A,Striding Behemoths,"An offshoot of the Emperor's Spears chapter, the Tempest Legion second company is a quick-response attack force that has been tasked with defending the Leviathan sector.",Bounties,,,,,,
-Lightning Eaters,sKyD--qCTLSI16zhwmZqXw,Third Arm of the Lightning Eaters ,40K,40KGSC,Ascension Day,Genestealer Cults,,8hloumCFQRG3RB71YUjPBg,Y2MzvpNCSbiPw07xiU2-0A,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/IuGqAEYvSNY2WicmgfPs.JPG,,3,2,2,1000,7,r0WD00a8SwiNZMcayxXl-Q,,wlYQokqUTFOsMO1xISy72g,,,,,,,,,,
-Stubby bois,5Mo8VpnVRNWgTW205fIwRg,Khals Jnrs,40K,40KVOT,Oathband,Leagues of Votann,,2lZbGY5QR5aOdXVjebYdgg,Y2MzvpNCSbiPw07xiU2-0A,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/fQWEqBPSqID2xGTSKpHL.jpg,,2,1,1,,,,,,,,,,,,,,,
-Sigmarmy,II71-JbpSQmLsXkmUorfFQ,His Majesties 1st Sigperial Sigtachment,40K,40KSMA,Unforgiven Task Force,Space Marines,,aw6YMvrsTOi2U0pYBilbmw,Y2MzvpNCSbiPw07xiU2-0A,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/utB8cP9i9lD7dTnwUkSS.png,,1,0,2,1000,5,,,,,,,,SMADRK,Dark Angels,0,,,
-S.E.Gs,FfU53iUSQMyUoL3VrixKnA,Seriously Excellent Golds,40K,40KCUS,Shield Host,Adeptus Custodes,,R96yyo9-SzO0SUhpTfSCSw,Y2MzvpNCSbiPw07xiU2-0A,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/IDhWiO93cWYzWGTpSJ4s.webp,,0,1,1,1000,6,r0WD00a8SwiNZMcayxXl-Q,,,,,,,,,0,,,
-ShortyMcShortShort,xzr8g.ZCQK22Xx3LAirZ4A,SuperDuperLongNameThatsLongerThanYours,40K,40KMEC,Rad-Cohort,Adeptus Mechanicus,,q04j1xhhR3eRV0LVUFyHew,Y2MzvpNCSbiPw07xiU2-0A,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/8QFQhduMGX3QVPX6OTng.JPEG,,1,0,1,1800,-17,,"
-Fresh Recruits (), -1 RP (13/06/2023, 18:01:31)
-Increase Supply Limit (), MISSINGRP (13/06/2023, 18:03:02)
-Increase Supply Limit (), MISSINGRP (13/06/2023, 18:08:29)
-Repair and Recuperate (), -1 RP (13/06/2023, 18:10:46)
-Repair and Recuperate (), -1 RP (13/06/2023, 18:11:25)
-Repair and Recuperate (), -1 RP (13/06/2023, 18:16:04)
-Increase Supply Limit , -1RP (13/06/2023, 18:19:11)
-Increase Supply Limit , -1RP (6/13/2023, 9:19:51 PM)",,,,,,,,0,,,
-9th Expedition,HVoLVoABQMOR4iRu29TehQ,9th Expansion Expedition,40K,40KTAU,Kauyon,Tau,,8hloumCFQRG3RB71YUjPBg,lae.P-1OTW-M5JwStHAemQ,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/eh7XOL7fXCIMXQDrMdR3.png,,1,1,0,1200,4,r0WD00a8SwiNZMcayxXl-Q,"
-Increase Supply Limit , -1RP (6/14/2023, 11:02:23 AM)
-Increase Supply Limit , -1RP (6/26/2023, 2:01:03 PM)",,,,"Initially sent to colonize the Leviathan system, the 9th Expedition must now fight for their lives as war engulfs the sector.",,,,0,,,
-KoC,WEvBCxs2Tu-Jw1eBy3NrNQ,Knights of Colbrond,40K,40KSMA,Unforgiven Task Force ,Space Marines,,R96yyo9-SzO0SUhpTfSCSw,lae.P-1OTW-M5JwStHAemQ,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/Fj0cmi7JX6XyuhnJk9wE.jpg,,0,0,0,1200,4,,"
-Increase Supply Limit , -1RP (27/06/2023, 10:38:53 am)",,,,"One of the great houses of knights that served The Lion on Calaban. After the founding of the first legion, they continued to serve the primarch loyaly. After the great schism fractured there brotherhood, the house of Colbrond took it upon themselves to hunt the fallen to the farthest reaches of the galaxy.",,SMADRK,Dark Angels,0,,,
-Malcontent Bros.,hXFn6hohSXSrCk2872X-xQ,The Brothers of Malcontent,40K,40KDAE,Daemonic Incursion,Chaos Daemons,,Nte0U8usRDeIbxVoM7evfA,lae.P-1OTW-M5JwStHAemQ,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/t9ECrsdiFfhqLq03iZsh.jpg,,0,0,0,1000,5,,"
-Renowned Heroes (Brother Onslaught), -1RP (6/27/2023, 1:19:15 PM)",AOGrsLJ4SjOlIPbyCFuhtA,,,What zany high-jinks will this Daemon Prince and Abominant led force get up to next?,,,,0,215,"A'rgath, the King of Blades","Khorne Legiones Daemonica model only. Add 1 to the Attacks and Strength characteristics of the bearer’s melee weapons. While the bearer is within your army’s Shadow of Chaos, add 2 to the Attacks and Strength characteristics of the bearer’s melee weapons instead."
-Cawl's Intruders,M77zK5X0QBSo1HxYefVSRQ,Cawl's Intrusion Clade,40K,40KMEC,Rad-Cohort,Adeptus Mechanicus,,q04j1xhhR3eRV0LVUFyHew,lae.P-1OTW-M5JwStHAemQ,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/ModQwxfP3oKxTFjwsbE7.jpg,,0,0,0,1000,4,,"
-Renowned Heroes (Magos Sinbreed), -1RP (27/06/2023, 14:16:47)",mWMqaRtAS4q9opknLBteZQ,,,,,,,0,95,Omni-Steriliser,"Adeptus Mechanicus model only. Add 3 to the 
-Attacks characteristic of the bearer's ranged weapons. 
-In addition, the bearer's ranged weapons have the 
-[ANTI-INFANTRY 2+] and [ANTI-MONSTER 4+] abilities"
-Science!,n6-DFp3qT--CGTpZKCkB1Q,The Force For Science!,40K,40KCKN,Doooooooom,Chaos Knights,,Nte0U8usRDeIbxVoM7evfA,Y2MzvpNCSbiPw07xiU2-0A,,,0,1,2,1400,5,,"
-Tyrannic War Veteran (Big Stomper), -1RP (6/27/2023, 8:29:48 PM)
-Tyrannic War Veteran (Second Stompy Friend), -1RP (7/10/2023, 7:35:54 PM)
-Increase Supply Limit , -1RP (7/10/2023, 7:47:26 PM)
-Increase Supply Limit , -1RP (7/10/2023, 7:47:33 PM)",,,Striding Behemoths,,,,,0,,,
-Helios Enclave,Zh-lzdPGQqKRL2TMdZucjg,Helios Enclave,40K,40KTAU,Kauyon,Tau,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/n1xZZljeE9doSPhPVJUf.svg,4m.NU7kaSH24KnXTl6Ywsg,rYADcP6WTbKYEUihdrKwEg,,KALADOR,1,1,0,1000,7,,"
-Renowned Heroes (Fireblade Mel'kas), -1RP (8/24/2023, 10:43:29 PM)",AxIyfMzJQfOUQOg0dR51KQ,,,"An offshoot of the Vior'la sept, the Helios Enclave is a group of T'au Empire scientists and warriors committed to the discovery of ancient artefacts.",Order of Battle,,,0,65,Exemplar of the Kauyon,This unit's Kauyon Detachment rule takes effect from the second battle round.
-Blood Angels,XPxO2t7rQ0KJRNvhJisQug,Blood Crusade for thirst,40K,40KSMA,Sons of Sanguineous ,Space Marines,,HQO-8g2iTu-wXEhFjHna0A,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/VyYk7nWXZLDd2aoObBIi.jpg,,0,2,0,1000,6,r0WD00a8SwiNZMcayxXl-Q,"
-Renowned Heroes (Captain Freeborn), -1RP (8/24/2023, 5:26:03 PM)",0h1cmTKLTUK9FWhz36hQDA,,,,Bounties,SMABLD,Blood Angels,0,100,Artisan of War,
-Seekers,RmIvOwGAQEaJRnC67RcJ0w,Seekers of Ynnead,40K,40KELD,Battle host,Aeldari,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/GhPOlMrQeIRym6qwPgtP.svg,CpUTP-qyQAquw4YVXV73ww,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/XunoHZx25YZ39O3YGBQW.png,,1,0,0,1000,6,,,,,,"After the keeper of secrets Shalaxi Hellbane informed them of the fact that the final crone sword was located within the realm of slaanesh, Yvraine and the Ynnari began to lose hope to reviving Ynnead using means other than the Rhana Dandra, the forces of the Ynnari began to splinter, stretching out into the stars assisting craftworlds and other eldar where possible whilst Yvraine and the Visarch formulate their next move. They were then visited by a shadowseer by the name of Nargwath, who informed Yvraine that her troupe master Raita has discovered a temple on the planet of Kalador which resonates with the same energy as the Yncarne. However he does not posses the means to fend off the other factions who have come to the planet for their own means, curious by this new development, Yvraine and the Visarch depart with Nargwath to study the temple and possible discover how this particular planet has the same energy as the Yncarne, perhaps there's hope to revive Ynnead yet....",Order of Battle,,,0,,,
-Gantagonist,5cIg4XTCQEOaJyaHpYX-ag,Hive Fleet Gantagonist ,40K,40KTYR,Invasion Fleet,Tyranids,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/U2J72UIqngwSMkF9eeyc.svg,guIKQH-ITaCwHGrSh.fn3w,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/P2NGyv7gmQyI982EQLeZ.jpg,,1,1,0,1600,2,,"
-Renowned Heroes (The Gant Queen), -1RP (09/08/2023, 9:28:56)
-Increase Supply Limit , -1RP (13/08/2023, 10:51:35)
-Increase Supply Limit , -1RP (23/08/2023, 19:24:10)
-Tyrannic War Veteran (The Gant Queen), -1RP (24/08/2023, 15:24:02)
-Repair and Recuperate (The Parasite of Kalador), -1 RP (24/08/2023, 18:14:39)
-Increase Supply Limit , -1RP (25/08/2023, 11:35:20)",,,Striding Behemoths,"A splinter fleet from the Octarius war, this Hive Fleet has arrived to Kalador with a teeming horde, and biomass aplenty.
-
-These tyranids have crashed their bioships directly into the ocean, and are rising to the beaches, shrouded in a mysterious mist.
-
-Lore logs: https://docs.google.com/document/d/1ZX1dZxYfUHJdwk8Kf0ghxGxM7AG19W_cJgY9hfqw2bw/edit?usp=sharing",Bounties,,,0,,,
-Tallarn,RuGKfHkcQMuQLIKi.5Cs1Q,Tallarn Thirty Three and a Third ,40K,40KIMP,Combined Regiment,Astra Militarum,,un--HJ-CTn2gnBLQx3xO4A,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/c2u93qtW8EhQOC8d4OfO.jpg,,2,0,0,1000,8,,,,,,"Sand, Scarfs and Shawarma",Bounties,,,0,,,
-Regals,Y3uW5HZKTwS1mr-auViK-Q,The Regal Legion,40K,40KCSM,Mixed,Chaos Space Marines,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/ICZpF5aNldRWasC3hqcC.svg,Nte0U8usRDeIbxVoM7evfA,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/3A04lWyPTCi9c49Szigj.png,,0,3,0,1800,0,a.eV8Hsj8QaWh7nvM1iQJrg,"
-Renowned Heroes (Brother Onslaught), -1RP (8/10/2023, 10:59:08 AM)
-Increase Supply Limit , -1RP (8/10/2023, 10:59:45 AM)
-Increase Supply Limit , -1RP (8/21/2023, 2:20:17 PM)
-Tyrannic War Veteran (Brother Onslaught), -1RP (8/25/2023, 8:55:39 AM)
-Increase Supply Limit , -1RP (8/25/2023, 9:17:10 AM)
-Increase Supply Limit , -1RP (8/26/2023, 10:13:34 AM)
-Tyrannic War Veteran (Mortis), -1RP (8/26/2023, 10:14:01 AM)
-Tyrannic War Veteran (Reginald The Immaculate), -1RP (8/26/2023, 10:14:08 AM)",MxUWmufGT2uqVmRVIz3.4g,,Striding Behemoths,"The Regal Legion is all that remains of the fallen Marshwood Vale Sector, home to the once glorious House Mammon knight household and it's sworn allies the Gaudy Marines. They have arrived to this arena of battle to test which of the Mammon Siblings shall prove themselves most worthy to lead their warband.",Bounties,,,0,,,
-Raven Guard,h4EGZdI6S.aoChyQsoKDNg,Raven Guard - Task Force Korvidae,40K,40KSMA,Gladius Task Force,Space Marines,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/uwaMZJnHqXuVoKrK0hiW.png,EUPagrEESBqS6usiNHhN2w,rYADcP6WTbKYEUihdrKwEg,,,0,2,0,1200,5,,"
-Rearm and Resupply (Squad Longstrike), -1RP (24/08/2023, 9:07:29 pm)
-Increase Supply Limit , -1RP (8/24/2023, 11:13:34 PM)",,,,A task force deployed after losing communications with a Veteran Intercessor Kill Team deployed to the system to investigate rumors of Xenos activity. Finding only the squad sergeant alive; the task force have deployed en mass. ,Bounties,,,0,,,
-Azuretide Exp.,S88aHxS-QZapYlXE-F.-SA,The Azuretide Expedition,40K,40KVOT,Oathband,Leagues of Votann,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/veqw6fmJbx9sFCdY7T0W.webp,jj8nLhVNSGWxij-jPsaT3Q,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/FyhTNhmEeeFk9bxzm8gg.jpg,,2,0,0,1200,7,,"
-Renowned Heroes (Kahl Tôryk Tidebinder), -1RP (12/08/2023, 22:38:47)
-Increase Supply Limit , -1RP (24/08/2023, 16:18:14)
-Increase Supply Limit , -1RP (24/08/2023, 19:23:55)",,,,"The Azureride Expedition - a renowned force residing within the Leagues of Votann, that stands as a symbol of unity and resistance against the tides of chaos that threaten to consume the Old World. Composed of fierce but strategic Kin and Ironkin alike, The Azuretide Expedition stands as a formidable force against the encroaching darkness.",Order of Battle,,,0,,,
-Star Wizards,GTsrmFgvQXuqIEhvdeGoyA,Star Wizards,40K,40KGSC,Ascension day,Genestealer Cults,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/DfZ6kQY7sQ3nupViRjYi.svg,AFVLW2GjRDyEcxqQjrs6Gg,rYADcP6WTbKYEUihdrKwEg,,,1,1,0,1000,7,,,,,,,Order of Battle,,,0,,,
-Gluttons,a-I5Ii7jkTwCa2O2Nz9qIVw,The Gluttons of Vicissitude,40K,40KCDG,Plague Company,Death Guard,,lmyB9GWOSseYDTGieuoYRA,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/C5Y2ZQBWKlZG3APm8Q4I.png,,0,1,0,1400,3,,"
-Renowned Heroes (Lazarus), -1RP (10/08/2023, 14:58:28)
-Increase Supply Limit , -1RP (13/08/2023, 23:59:15)
-Increase Supply Limit , -1RP (15/08/2023, 21:54:48)",,,,"Displaced by the tyrannic war and neglected by their Sepsis Cohort, this Death Guard warband has such sights and smells to show you. 
-
-See campaign updates here: https://wordtweak.substack.com/
-
-#1 PROLOGUE: https://wordtweak.substack.com/p/1-prologue-the-gluttons-of-vicissitude",Bounties,,,0,,,
-Volucris,lfh7ezxmRbiHGfnj.h2G6A,Hive Fleet Volucris Tendril,40K,40KTYR,Invasion Fleet,Tyranids,,tBJJ6ZM-RkaSZcAEVfPyog,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/4ZwGs3eKpQAV2GBkloDK.jpg,,0,0,0,1000,5,,,,,,"An offshoot of Hive Fleet Volucris, a new fleet approaching slowly from the Galaxies western edge, has been hurled forward, ahead of the bulk of the fleet to scout suitable worlds to take. 
-
-The Hive Fleets coloration suggests it to be a distant offshoot of Leviathan, though that is yet to be confirmed. ",Bounties,,,0,,,
-D.O.R.F inc,4B6.qkgpTN2HYjJOgnAaIg,Drilling Ore Refinery Foundry inc,40K,40KVOT,Oathband ,Leagues of Votann,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/JjHSpAWZTSnRRujGEWoU.svg,rn9T2mc3RnCUzK-g68emyw,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/kYQ7v3LRJmRYaC4IR07T.jpeg,,0,2,0,1000,7,,,,,,"D.O.R.F inc offers its services to all who can afford them. Specialists at retrieving precious resources and providing a myriad of services including that of mercenaries.
-
-D.O.R.F inc have begun to build a reputation as efficient, no nonsense workforce.
-
-However, those who hire D.O.R.F inc have little knowledge of the true purpose behind their endeavours, they do not know the true will of their ancestor core, the  Votann.
-",Bounties,,,0,,,
-Weez Orkz,ofyzZjIaQrCbIEejZC1xCA,Dun  need no Zoggin name weez Orkz,40K,40KORK,Waaagh! Tribe,Orks,,uDKf3OouQY2Nw0O0xZ3JBA,,,,0,0,0,1000,5,,,,,,,,,,0,,,
-Necron Storm,JOXDLsDZTNSMYdYLP8SGiw,,40K,40KNEC,Awakened Dynasty,Necrons,,YKKygQRsQ.yill2d7DOlMA,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/vSGnIYs0CiZzSoJsObvy.jpg,,1,0,0,1000,6,a.eV8Hsj8QaWh7nvM1iQJrg,,,,,"Lord Zanakh, overlord of the Sautekh Dynasty, has been dispatched by the Stormlord, Imotekh to investigate the Kalador system.
-The apparent strategic value of this system is unclear, but one does not question the cunning of Lord Imotekh.
-It appear several of the lesser races have also converged on this system, which suggests there is something of value here.",Bounties,,,0,,,
-Tempest Wardens,t-4WWEJDSueRc9mgSROesQ,Tempest Wardens,40K,40KSMA,Gladius,Space Marines,,FcQ-JwXrR.Wrdne9.NTRgA,rYADcP6WTbKYEUihdrKwEg,,,1,0,0,1200,5,,"
-Increase Supply Limit , -1RP (21/08/2023, 21:17:20)
-Increase Supply Limit , -1RP (21/08/2023, 21:18:01)",,,,"Chapter Master Ta’beis silently studied the message before him ‘Kalador...’
-
-Glancing up at the armoured figure before him, he spoke. “Take a scouting force, Gal’vindor. Jer’ra and the 11th Crusade Company will follow once they finish in the neighbouring sector.” 
-
-“As you command, my lord.” Gal’vindor made the Aquila. “By Blood and Blade His Will be Done.”",Bounties,,,0,,,
-Ember Wardens,cWnoghK9SBS1DsfHKJZxFQ,Ember Wardens Siege Company,40K,40KSMA,Gladius Task Force,Space Marines,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/Q4wHy8FnSFaTuDeTiJMM.png,k0IaBeK3T2af2BnfL1r3sA,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/FLaNLKf868vduL292uFA.jpg,,1,1,0,1000,8,H59eMxgfRoWZsJLaxe0MPA,,,,,"The Ember Wardens siege company, specialists in storming brutal heretic blockades, have been deployed to investigate the troubling signals coming from the Kalador system.",Bounties,,,0,,,
-Bakunawa,qxPA8h9jQHO5H3Z1RLzrpw,Hive Fleet Bakunawa,40K,40KTYR,Invasion Fleet,Tyranids,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/9It2NxuDnj396kRkQNq9.svg,DLmHOuNVSF-pQ4qptf269g,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/CNhfajGiozkEC1zfKO40.jpg,,3,0,0,1200,4,,"
-Legendary Veterans (Bane of Legions), -3RP (24/08/2023, 9:55:02 pm)
-Increase Supply Limit , -1RP (24/08/2023, 9:56:08 pm)",,,,"Initially believed to be a splinter fleet of Leviathan directly, some speculate that Hive Fleet Bakunawa originally were a small part of another splinter fleet at first - Hive Fleet Kronos. The extremely potent psychic abilities of Bakunawa seem to support that theory with increasing vigor, as reports indicate high numbers of Zoanthropes being deployed against defending worlds.
-The main difference between the two however, is Bakunawa's use of Lictors. All reports of Bakunawa encounters state that the number of Lictors encountered before and during the initial invasion is higher than average for the splinter fleets size. 
-Seeming to favor this dual nature of psychic potency and stealthy terror tactics, Bakunawa has proven itself to be an increasing threat to all that cross it's path.
-",Bounties,,,0,,,
-Grey Knights,aUMmleRXQFKQoT-RTYVWVQ,The Wardmakers,40K,40KGRE,Teleport Strike Force,Grey Knights,,Q.ktIUWORX-XjFuKKHYh0Q,rYADcP6WTbKYEUihdrKwEg,,,0,0,0,1000,5,,,,,,,,,,0,,,
-Dextrose Fleet,6hcsWQPsSv-TWqwn008DjA,Dextrose Hive Fleet ,40K,40KTYR,Fleet,Tyranids,,R7aNKVtiSGKjGgr.AGe6GQ,rYADcP6WTbKYEUihdrKwEg,,,0,0,0,1000,5,,,,,,,,,,0,,,
-RGISU,W5fy8tCIS7a5nL1i8N3ynQ,Ryan Gosling is literally us.,40K,40KCUS,Shield Host.,Adeptus Custodes,,0AXVqfEXSt2.Ms1CyugzMg,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/tKQqOPVb7anXPNJgWRzt.jpg,,1,1,0,1000,7,,,,,,I drive.,,,,0,,,
-Forge Blade III,wHkn6DHjTpysn1U3qO9hjQ,Ur Blade of the Crimson Forge,40K,40KMEC,Rad Detachment,Adeptus Mechanicus,,q04j1xhhR3eRV0LVUFyHew,rYADcP6WTbKYEUihdrKwEg,https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/rbdoPlrQoAk9o95k449q/pub/9Zb4CbRoZ2GR9yAdAI5C.jpg,,0,0,0,1000,5,,"
-Renowned Heroes (Magos Sepurnichus), -1RP (24/08/2023, 9:54:35)",64J7zY8vS9SDzCK8Ehjk.Q,,,"The forges of Mars burned bright as always, creating a kaleidoscope of dancing shadows on the wall behind Magos Sepernichus as he stared out of the only external view port of his chambers, not really paying attention to the images processed initially by organic eyes, then filtered and rendered through several systems in order to extract every last detail from the sight. 
-
-What he was looking at was scarcely important compared to the alert he’d just received from his noosphere link. Having already absorbed all available data on the blasphemous blight they called the Tyranid, it had been many revolutions since any new data had been brought to his attention.
-
-This was different to the rest too. This wasn’t the vain pondering of yet another self assured Magos, speculating on the species as though their opinion was relevant in a vast sea of them.
-This was a military alert. He wouldn’t have even seen this if he’d stayed within the arbitrary boundaries his “betters” set on his research.
-
-No matter though. This was the chance for new data. 
-The fires continued to burn as the Magos formulated a plan to get himself and his retinue to the source of this alert.
-
-“Servitor!” The Magos summoned one of the thousands of lobotomized slaves to his side.
-“Yes Magos?” came an inhuman wheeze in return. 
-
-“Summon the Alphas immediately. I will require the services of their Kill Clades for the indefinite future. They belong to me now.”
-
-“They will accompany me to Kaledor.”
-",,,,0,,Omni-Steriliser,
+Name,Faction/Detachment,Faction/String,Battles/TotalWins,Battles/TotalLosses,Battles/TotalDraws
+Tempest Legion,Gladius Task Force,Space Marines,4,7,2
+Lightning Eaters,Ascension Day,Genestealer Cults,3,2,2
+Stubby bois,Oathband,Leagues of Votann,2,1,1
+Sigmarmy,Unforgiven Task Force,Space Marines,1,0,2
+S.E.Gs,Shield Host,Adeptus Custodes,0,1,1
+ShortyMcShortShort,Rad-Cohort,Adeptus Mechanicus,1,0,1
+9th Expedition,Kauyon,Tau,1,1,0
+KoC,Unforgiven Task Force ,Space Marines,0,0,0
+Malcontent Bros.,Daemonic Incursion,Chaos Daemons,0,0,0
+Cawl's Intruders,Rad-Cohort,Adeptus Mechanicus,0,0,0
+Science!,Doooooooom,Chaos Knights,0,1,2
+Helios Enclave,Kauyon,Tau,1,1,0
+Blood Angels,Sons of Sanguineous ,Space Marines,0,2,0
+Seekers,Battle host,Aeldari,1,0,0
+Gantagonist,Invasion Fleet,Tyranids,1,1,0
+Tallarn,Combined Regiment,Astra Militarum,2,0,0
+Regals,Mixed,Chaos Space Marines,0,3,0
+Raven Guard,Gladius Task Force,Space Marines,0,2,0
+Azuretide Exp.,Oathband,Leagues of Votann,2,0,0
+Star Wizards,Ascension day,Genestealer Cults,1,1,0
+Gluttons,Plague Company,Death Guard,0,1,0
+Volucris,Invasion Fleet,Tyranids,0,0,0
+D.O.R.F inc,Oathband ,Leagues of Votann,0,2,0
+Weez Orkz,Waaagh! Tribe,Orks,0,0,0
+Necron Storm,Awakened Dynasty,Necrons,1,0,0
+Tempest Wardens,Gladius,Space Marines,1,0,0
+Ember Wardens,Gladius Task Force,Space Marines,1,1,0
+Bakunawa,Invasion Fleet,Tyranids,3,0,0
+Grey Knights,Teleport Strike Force,Grey Knights,0,0,0
+Dextrose Fleet,Fleet,Tyranids,0,0,0
+RGISU,Shield Host.,Adeptus Custodes,1,1,0
+Forge Blade III,Rad Detachment,Adeptus Mechanicus,0,0,0
