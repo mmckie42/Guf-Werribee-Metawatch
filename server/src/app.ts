@@ -2,7 +2,8 @@ import express from 'express';
 import chalk from 'chalk';
 import { Faction } from './types';
 import { parse } from 'csv-parse';
-const fs = require("fs")
+import * as fs from 'fs';
+
 const app = express();
 
 
