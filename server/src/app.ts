@@ -1,8 +1,9 @@
-import express from 'express';
+import express, { response } from 'express';
 import chalk from 'chalk';
 import { Faction } from './types';
 import { parse } from 'csv-parse';
 import * as fs from 'fs';
+import csv from 'csv-parser';
 
 const app = express();
 
@@ -11,28 +12,54 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 const env = app.get('env').trim();
 
-// Import data from csv section
-// using info from https://sebhastian.com/read-csv-javascript/
-// this will probably need to be its own section.
+
+const rawData = []
 const winData = []
-fs.createReadStream('./src/csv-import/armies.csv')
-	.pipe(parse({ delimiter: ",", columns: true, ltrim: true }))
-	.on("data", function (row) {
-		// console.log(row)
-		winData.push(row)
+const filepath = './src/csv-import/armies.csv';
+
+async function readCsv(path: string) {
+	const data = new Promise((resolve, reject) => {
+		fs.createReadStream(path)  
+		.pipe(csv())
+		.on('data', (row) => {
+			rawData.push(row);
+		})
+		.on('end', () => {
+			console.log('Done.');
+			resolve(rawData);
+		})
+		.on('error', reject)
 	})
-	.on("error", function (error) {
-		console.log(error.message);
+
+	return data;
+}
+  
+function sortData(array) {
+	let winData = {
+		// imperium: {},
+		// orks: {}
+	}
+	rawData.forEach((row) => {
+		if(winData['Faction/String']) {
+			winData['Faction/String'].wins = 0; //replace 0 with new value
+		}
+		else {
+			winData['Faction/String'] = {
+				name: row['Faction/String'],
+				wins: 0,
+				gamesPlayed: Number(row['Battles/TotalWins']) + Number(row['Battles/TotalLosses']) + Number(row['Battles/TotalDraws'])
+			}
+		}
 	})
-	.on("end", function () {
-		console.log(winData);
-		console.log("finished");
-	});
+	return winData
+}
+
+const data = await readCsv(filepath);
+const sorted = sortData(data);
+console.log('sorted', sorted);
 
 
-// End import data section
-// the data is now imported and stored as winData.
-// Next step is to compile each faction into its own faction object with the combined data from winData
+
 
 app.get('/hello', async (req, res: express.Response<string>) => {
 	res.json('Hello world');
