@@ -58,12 +58,19 @@ function sortData(array) {
 			}
 		}
 	})
+	const factions = Object.keys(winData)
+	factions.forEach((fac) => {
+		winData[fac]['winRate'] = winData[fac]['gamesPlayed'] === 0 ? 0 : winData[fac]['wins'] / winData[fac]['gamesPlayed'] * 100
+	})
 	return winData
 }
 
 
 const data = await readCsv(filepath);
 const sorted = sortData(data);
+
+console.log(sorted)
+
 
 // app.get('/hello', async (req, res: express.Response<string>) => {
 // 	res.json('Hello world');
@@ -78,7 +85,8 @@ app.get('/faction/:id', async (req, res: express.Response<Faction | { message:st
 			losses: sorted[factionId].losses,
 			draws: sorted[factionId].draws,
 			playerCount: sorted[factionId].playerCount,
-			gamesPlayed: sorted[factionId].gamesPlayed
+			gamesPlayed: sorted[factionId].gamesPlayed,
+			winRate: sorted[factionId].winRate
 		});
 	}
 	else {
