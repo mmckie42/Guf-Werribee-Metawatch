@@ -66,14 +66,8 @@ function sortData(array) {
 	return winData
 }
 
-
 const data = await readCsv(filepath);
 const sorted = sortData(data);
-
-
-// app.get('/hello', async (req, res: express.Response<string>) => {
-// 	res.json('Hello world');
-// });
 
 app.get('/faction/:id', async (req, res: express.Response<Faction | { message:string }>) => {
 	const factionId = req.params.id
