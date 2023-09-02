@@ -60,7 +60,7 @@ function sortData(array) {
 	})
 	const factions = Object.keys(winData)
 	factions.forEach((fac) => {
-		const winperc = winData[fac]['gamesPlayed'] === 0 ? 0 : winData[fac]['wins'] / winData[fac]['gamesPlayed'] * 100
+		const winperc = Math.floor(winData[fac]['gamesPlayed'] === 0 ? 0 : winData[fac]['wins'] / winData[fac]['gamesPlayed'] * 100) //rounds down
 		winData[fac]['winRate'] = `${winperc}%`
 	})
 	return winData
@@ -69,8 +69,6 @@ function sortData(array) {
 
 const data = await readCsv(filepath);
 const sorted = sortData(data);
-
-console.log(sorted)
 
 
 // app.get('/hello', async (req, res: express.Response<string>) => {
