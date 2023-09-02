@@ -1,7 +1,9 @@
 export type Faction = {
 	name: string;
 	wins: number;	
-	numOfPlayers : number;
+	losses: number;
+	draws: number;
+	playerCount : number;
 	gamesPlayed: number;
 }
 

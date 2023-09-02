@@ -1,33 +1,34 @@
-Name,Faction/Detachment,Faction/String,Battles/TotalWins,Battles/TotalLosses,Battles/TotalDraws
-Tempest Legion,Gladius Task Force,Space Marines,4,7,2
-Lightning Eaters,Ascension Day,Genestealer Cults,3,2,2
-Stubby bois,Oathband,Leagues of Votann,2,1,1
-Sigmarmy,Unforgiven Task Force,Space Marines,1,0,2
-S.E.Gs,Shield Host,Adeptus Custodes,0,1,1
-ShortyMcShortShort,Rad-Cohort,Adeptus Mechanicus,1,0,1
-9th Expedition,Kauyon,Tau,1,1,0
-KoC,Unforgiven Task Force ,Space Marines,0,0,0
-Malcontent Bros.,Daemonic Incursion,Chaos Daemons,0,0,0
-Cawl's Intruders,Rad-Cohort,Adeptus Mechanicus,0,0,0
-Science!,Doooooooom,Chaos Knights,0,1,2
-Helios Enclave,Kauyon,Tau,1,1,0
-Blood Angels,Sons of Sanguineous ,Space Marines,0,2,0
-Seekers,Battle host,Aeldari,1,0,0
-Gantagonist,Invasion Fleet,Tyranids,1,1,0
-Tallarn,Combined Regiment,Astra Militarum,2,0,0
-Regals,Mixed,Chaos Space Marines,0,3,0
-Raven Guard,Gladius Task Force,Space Marines,0,2,0
-Azuretide Exp.,Oathband,Leagues of Votann,2,0,0
-Star Wizards,Ascension day,Genestealer Cults,1,1,0
-Gluttons,Plague Company,Death Guard,0,1,0
-Volucris,Invasion Fleet,Tyranids,0,0,0
-D.O.R.F inc,Oathband ,Leagues of Votann,0,2,0
-Weez Orkz,Waaagh! Tribe,Orks,0,0,0
-Necron Storm,Awakened Dynasty,Necrons,1,0,0
-Tempest Wardens,Gladius,Space Marines,1,0,0
-Ember Wardens,Gladius Task Force,Space Marines,1,1,0
-Bakunawa,Invasion Fleet,Tyranids,3,0,0
-Grey Knights,Teleport Strike Force,Grey Knights,0,0,0
-Dextrose Fleet,Fleet,Tyranids,0,0,0
-RGISU,Shield Host.,Adeptus Custodes,1,1,0
-Forge Blade III,Rad Detachment,Adeptus Mechanicus,0,0,0
+Faction/String,Battles/TotalWins,Battles/TotalLosses,Battles/TotalDraws
+Space Marines,4,6,1
+Genestealer Cults,3,2,2
+Leagues of Votann,2,1,1
+Space Marines,1,0,0
+Adeptus Custodes,0,1,1
+Adeptus Mechanicus,1,0,0
+Tau,1,1,0
+Space Marines,0,0,0
+Chaos Daemons,0,0,0
+Adeptus Mechanicus,0,0,0
+Chaos Knights,0,1,2
+Tau,1,5,0
+Space Marines,0,2,0
+Aeldari,2,0,0
+Tyranids,2,2,0
+Astra Militarum,2,1,0
+Chaos Space Marines,1,4,0
+Space Marines,0,4,0
+Leagues of Votann,4,1,0
+Genestealer Cults,2,2,0
+Death Guard,0,1,1
+Tyranids,0,1,2
+Leagues of Votann,1,3,0
+Orks,0,0,0
+Necrons,5,0,0
+Space Marines,1,2,0
+Space Marines,4,1,0
+Tyranids,3,0,0
+Grey Knights,0,0,0
+Tyranids,1,0,0
+Adeptus Custodes,1,2,1
+Adeptus Mechanicus,2,2,0
+Chaos Space Marines,0,0,0

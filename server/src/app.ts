@@ -4,6 +4,7 @@ import { Faction } from './types';
 import { parse } from 'csv-parse';
 import * as fs from 'fs';
 import csv from 'csv-parser';
+import { log } from 'console';
 
 const app = express();
 
@@ -14,7 +15,7 @@ const env = app.get('env').trim();
 
 
 const rawData = []
-const winData = []
+// const winData = []
 const filepath = './src/csv-import/armies.csv';
 
 async function readCsv(path: string) {
@@ -35,51 +36,75 @@ async function readCsv(path: string) {
 }
   
 function sortData(array) {
-	let winData = {
-		// imperium: {},
-		// orks: {}
-	}
+	let winData = {}
 	rawData.forEach((row) => {
-		if(winData['Faction/String']) {
-			winData['Faction/String'].wins = 0; //replace 0 with new value
+		const key = row['Faction/String'].toLowerCase().replaceAll(' ', '_') // Converting to all lower case for faction ID's
+		const gamesPlayed = Number(row['Battles/TotalWins']) + Number(row['Battles/TotalLosses']) + Number(row['Battles/TotalDraws'])
+		if(winData[key]) {
+			winData[key].wins = winData[key].wins + Number(row['Battles/TotalWins']) 
+			winData[key].losses = winData[key].losses + Number(row['Battles/TotalLosses'])
+			winData[key].draws = winData[key].draws + Number(row['Battles/TotalDraws'])
+			winData[key].gamesPlayed = winData[key].gamesPlayed + gamesPlayed
+			winData[key].playerCount++
 		}
 		else {
-			winData['Faction/String'] = {
+			winData[key] = {
 				name: row['Faction/String'],
-				wins: 0,
-				gamesPlayed: Number(row['Battles/TotalWins']) + Number(row['Battles/TotalLosses']) + Number(row['Battles/TotalDraws'])
+				wins: Number(row['Battles/TotalWins']),
+				losses: Number(row['Battles/TotalLosses']),
+				draws: Number(row['Battles/TotalDraws']),
+				playerCount: 1,
+				gamesPlayed: gamesPlayed
 			}
 		}
 	})
 	return winData
 }
 
+
 const data = await readCsv(filepath);
 const sorted = sortData(data);
-console.log('sorted', sorted);
 
-
-
-
-app.get('/hello', async (req, res: express.Response<string>) => {
-	res.json('Hello world');
-});
+// app.get('/hello', async (req, res: express.Response<string>) => {
+// 	res.json('Hello world');
+// });
 
 app.get('/faction/:id', async (req, res: express.Response<Faction | { message:string }>) => {
-	if(req.params.id === 'adMech') {
+	const factionId = req.params.id
+	if (sorted[factionId]) {
+		const factionData = sorted[factionId]
 		res.status(200).json({
-			name: 'Adeptus Mechanicus',
-			wins: 4,
-			numOfPlayers: 3,
-			gamesPlayed: 3
+			name: sorted[factionId].name,
+			wins: sorted[factionId].wins,
+			losses: sorted[factionId].losses,
+			draws: sorted[factionId].draws,
+			playerCount: sorted[factionId].playerCount,
+			gamesPlayed: sorted[factionId].gamesPlayed
 		});
 	}
 	else {
 		res.status(404).json({
-			message: `Faction #${req.params.id} does not exist`
+			message: `Faction ${req.params.id} does not exist`
 		});
 	}
 });
+
+
+// app.get('/faction/:id', async (req, res: express.Response<any | { message:string }>) => {
+// 	if(req.params.id === '1') {
+// 		res.status(200).json({
+// 			name: sorted.Necrons,
+// 			wins: 4,
+// 			numOfPlayers: 3,
+// 			gamesPlayed: 3
+// 		});
+// 	}
+// 	else {
+// 		res.status(404).json({
+// 			message: `Faction #${req.params.id} does not exist`
+// 		});
+// 	}
+// });
 
 app.listen(8080, () => {
 	if(env === 'development') {
