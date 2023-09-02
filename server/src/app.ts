@@ -72,7 +72,6 @@ const sorted = sortData(data);
 app.get('/faction/:id', async (req, res: express.Response<Faction | { message:string }>) => {
 	const factionId = req.params.id
 	if (sorted[factionId]) {
-		const factionData = sorted[factionId]
 		res.status(200).json({
 			name: sorted[factionId].name,
 			wins: sorted[factionId].wins,
