@@ -60,7 +60,8 @@ function sortData(array) {
 	})
 	const factions = Object.keys(winData)
 	factions.forEach((fac) => {
-		winData[fac]['winRate'] = winData[fac]['gamesPlayed'] === 0 ? 0 : winData[fac]['wins'] / winData[fac]['gamesPlayed'] * 100
+		const winperc = winData[fac]['gamesPlayed'] === 0 ? 0 : winData[fac]['wins'] / winData[fac]['gamesPlayed'] * 100
+		winData[fac]['winRate'] = `${winperc}%`
 	})
 	return winData
 }
