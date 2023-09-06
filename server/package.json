@@ -3,7 +3,6 @@
 	"version": "0.0.1",
 	"main": "src/app.ts",
 	"type": "module",
-	"private": true,
 	"description": "You have queries? We have responses!",
 	"repository": "https://github.com/mmckie42/Guf-Werribee-Metawatch",
 	"scripts": {
