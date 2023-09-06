@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import csv from 'csv-parser';
 
 const app = express();
-
+const PORT = process.env.PORT || 8080
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -116,10 +116,10 @@ app.get('/gufmeta', async (req, res: express.Response<any | { message: string }>
 
 
 // Starts app
-app.listen(8080, () => {
+app.listen(PORT, () => {
 	if (env === 'development') {
 		console.log(chalk.magenta('-----------------------------------------------------------------------'));
-		console.log(chalk.magenta(`Server running at http://localhost:8080. Environment is "${env}."`));
+		console.log(chalk.magenta(`Server running at http://localhost:${PORT}. Environment is "${env}."`));
 		console.log(chalk.magenta('-----------------------------------------------------------------------'));
 	}
 });
