@@ -5,7 +5,7 @@ export type Faction = {
 	draws: number;
 	playerCount : number;
 	gamesPlayed: number;
-	winRate: number;
+	winRate: number | string;
 }
 
 
