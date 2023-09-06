@@ -1,7 +1,6 @@
 import express, { response } from 'express';
 import chalk from 'chalk';
 import { Faction } from './types';
-import { parse } from 'csv-parse';
 import * as fs from 'fs';
 import csv from 'csv-parser';
 
@@ -14,7 +13,6 @@ const env = app.get('env').trim();
 
 
 const rawData = []
-// const winData = []
 const filepath = './src/csv-import/armies.csv';
 
 async function readCsv(path: string): Promise<{ [key: string]: string }[]> {
@@ -34,20 +32,20 @@ async function readCsv(path: string): Promise<{ [key: string]: string }[]> {
 	return data;
 }
 
-function sortData(array): { [key: string]: Faction } {
-	let winData = {}
+function processData(array): { [key: string]: Faction } {
+	let processedData = {}
 	rawData.forEach((row) => {
 		const key = row['Faction/String'].toLowerCase().replaceAll(' ', '_') // Converting to all lower case for faction ID's
 		const gamesPlayed = Number(row['Battles/TotalWins']) + Number(row['Battles/TotalLosses']) + Number(row['Battles/TotalDraws'])
-		if (winData[key]) {
-			winData[key].wins = winData[key].wins + Number(row['Battles/TotalWins'])
-			winData[key].losses = winData[key].losses + Number(row['Battles/TotalLosses'])
-			winData[key].draws = winData[key].draws + Number(row['Battles/TotalDraws'])
-			winData[key].gamesPlayed = winData[key].gamesPlayed + gamesPlayed
-			winData[key].playerCount++
+		if (processedData[key]) {
+			processedData[key].wins = processedData[key].wins + Number(row['Battles/TotalWins'])
+			processedData[key].losses = processedData[key].losses + Number(row['Battles/TotalLosses'])
+			processedData[key].draws = processedData[key].draws + Number(row['Battles/TotalDraws'])
+			processedData[key].gamesPlayed = processedData[key].gamesPlayed + gamesPlayed
+			processedData[key].playerCount++
 		}
 		else {
-			winData[key] = {
+			processedData[key] = {
 				name: row['Faction/String'],
 				wins: Number(row['Battles/TotalWins']),
 				losses: Number(row['Battles/TotalLosses']),
@@ -57,36 +55,28 @@ function sortData(array): { [key: string]: Faction } {
 			}
 		}
 	})
-	const factions = Object.keys(winData)
+	const factions = Object.keys(processedData)
 	factions.forEach((fac) => {
-		const winperc = Math.floor(winData[fac]['gamesPlayed'] === 0 ? 0 : winData[fac]['wins'] / winData[fac]['gamesPlayed'] * 100)
-		winData[fac]['winRate'] = Number(winperc)
+		const winperc = Math.floor(processedData[fac]['gamesPlayed'] === 0 ? 0 : processedData[fac]['wins'] / processedData[fac]['gamesPlayed'] * 100)
+		processedData[fac]['winRate'] = Number(winperc)
 	})
 
-	return winData
+	return processedData
 }
 
+
+//Gets the imported data and processes it.
 const data = await readCsv(filepath);
-const sorted: { [key: string]: Faction } = sortData(data);
-
-//Sort by win rate
-let sortedArray = Object.entries(sorted).sort((a, b) => {
-	if (a[1].winRate < b[1].winRate) {
-		return 1;
-	}
-	return -1;
-})
-sortedArray.forEach(faction => faction[1].winRate = `${faction[1].winRate}%`)
-
-let sortedObject = Object.fromEntries(sortedArray);
-
-console.log(sortedObject);
-// console.log(sortedArray)
+const processedData: { [key: string]: Faction } = processData(data);
 
 
+
+// API Endpoints
+
+// Individual Factions
 app.get('/faction/:id', async (req, res: express.Response<Faction | { message: string }>) => {
 	const factionId = req.params.id
-	const result = Object.values(sorted).find(item => item.name.toLowerCase().replaceAll(' ', '_') === factionId)
+	const result = Object.values(processedData).find(item => item.name.toLowerCase().replaceAll(' ', '_') === factionId)
 	if (result) {
 		res.status(200).json({
 			...result,
@@ -99,8 +89,21 @@ app.get('/faction/:id', async (req, res: express.Response<Faction | { message: s
 		});
 	}
 });
-// editing this one
+
+// Full meta
 app.get('/gufmeta', async (req, res: express.Response<any | { message: string }>) => {
+	//Sort by win rate
+	// Converts processed data to array and sorts in decending order
+	let processedArray = Object.entries(processedData).sort((a, b) => {
+		if (a[1].winRate < b[1].winRate) {
+			return 1;
+		}
+		return -1;
+	})
+	processedArray.forEach(faction => faction[1].winRate = `${faction[1].winRate}%`)
+	// Converts back to object to return
+	const sortedObject = Object.fromEntries(processedArray);
+
 	if (sortedObject) {
 		res.status(200).json(sortedObject);
 	}
@@ -112,7 +115,7 @@ app.get('/gufmeta', async (req, res: express.Response<any | { message: string }>
 });
 
 
-
+// Starts app
 app.listen(8080, () => {
 	if (env === 'development') {
 		console.log(chalk.magenta('-----------------------------------------------------------------------'));
