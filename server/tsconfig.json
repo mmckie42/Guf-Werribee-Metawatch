@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
+		"rootDir": "./src",
 		"outDir": "dist",
 		"composite": true,
 		"module": "ESNext",
@@ -18,7 +19,7 @@
 		"esm": true,
 		"experimentalSpecifierResolution": "node"
 	},
-	"include": ["**/*.ts", "**/*.js", "**/*.json"],
+	"include": ["**/*.ts", "**/*.js", "**/*.csv"],
 	"exclude": [
 		"node_modules",
 		"dist",

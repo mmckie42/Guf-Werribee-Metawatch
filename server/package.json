@@ -6,7 +6,7 @@
 	"description": "You have queries? We have responses!",
 	"repository": "https://github.com/mmckie42/Guf-Werribee-Metawatch",
 	"scripts": {
-		"start": "set NODE_ENV=production && node --experimental-specifier-resolution=node dist/app.js",
+		"start": "set NODE_ENV=production && node --experimental-specifier-resolution=node src/app.js",
 		"dev": "set NODE_ENV=development && nodemon",
 		"build": "tsc",
 		"lint": "eslint **/*.ts"
