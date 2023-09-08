@@ -13,7 +13,9 @@ const env = app.get('env').trim();
 
 
 const rawData = []
-const filepath = './armies.csv';
+const filepath = './src/csv-import/armies.csv';
+
+
 
 async function readCsv(path: string): Promise<{ [key: string]: string }[]> {
 	const data: Promise<{ [key: string]: string }[]> = new Promise((resolve, reject) => {
