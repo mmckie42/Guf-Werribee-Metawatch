@@ -8,7 +8,7 @@
 	"scripts": {
 		"start": "set NODE_ENV=production && node --experimental-specifier-resolution=node src/app.js",
 		"dev": "set NODE_ENV=development && nodemon",
-		"build": "tsc",
+		"build": "tsc && mkdir dist/src && mkdir dist/src/csv-import cp ./src/csv-import/armies.csv dist/src/csv-import ",
 		"lint": "eslint **/*.ts"
 	},
 	"dependencies": {
